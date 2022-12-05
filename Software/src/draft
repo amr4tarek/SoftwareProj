@@ -1,0 +1,25 @@
+        Authentication authentication = new Authentication();
+        // Create admin
+        information adminInfo = new information("omar", "123");
+        authentication.signupAdmin(adminInfo);
+
+        // Login Admin
+        information adminInfoTest = new information("oar", "123");
+        Admin admin = authentication.loginAdmin(adminInfoTest);
+
+
+        System.out.println(admin);
+
+
+//        Infromation info = new Infromation("omar", "123");
+//        boolean status = authentication.signUp(info);
+//
+//        Infromation info2 = new Infromation("omar", "123");
+//        User user = authentication.loginAccount(info2);
+//
+//        if (user != null) {
+//            // Show options
+//        } else {
+//            System.out.print("Invalid Information");
+//        }
+//        System.out.print(user);
